@@ -1,18 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# My Portfolio:
+# Super SportCar Race:
 
-> Web page to Showcase my Projects.
+> Web page to Showcase a Fictional Super SportCar Race as Microverse Capstone Project.
 
-![screenshot](img/Screenshot.jpg)
+![screenshot]()
 
-[Online Version](https://2bleo.github.io/portfolio/)
+[Online Version]()
 
 
 ## Built With
 
 - HTML
 - CSS
+- Bootstrap
+- Javascript
+- Sass
 
 ## Author
 
@@ -40,4 +43,5 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
+Original design idea by Cindy Shin in Behance (https://www.behance.net/adagio07).
+The Creative Commons license of the design: (https://creativecommons.org/licenses/by-nc/4.0/)

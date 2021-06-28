@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'cocogoose';
+  src: url(Assets/fonts/cocogoose-pro-cufonfonts/Cocogoose-Regular.ttf);
+}
+
+.header-social {
+  height: 10px;
+  background-color: #ec5242;
+}
+
+.navbar h1 {
+  font-family: 'cocogoose', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */
