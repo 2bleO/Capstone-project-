@@ -9,11 +9,17 @@
   <link rel="stylesheet" href="/Assets/sass/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
 </head>
-<body class="scroll" id="body">
+<body class="scroll bg-light" id="body">
   <div class="container">
     <header class="row">
-      <div class="col-12 header-social"></div>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="social">
+        <ul>
+          <li class="social-icon"><a href="#">Facebook <i class="fab fa-facebook"></i></a></li>
+          <li class="social-icon"><a href="#">Instagram <i class="fab fa-instagram"></i></a></li>
+          <li class="social-icon"><a href="#">Twitter <i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <nav class="col-12 navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,40 +40,67 @@
           </div>
         </div>
       </nav>
-      <h1 class="col-sm-12 order-2">Super Sportcars Global Race 2021</h1>
-      <h2 class="col-sm-7 order-1">"Hello sharing World"</h2>
-      <p class="col-sm-12 order-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita tempora pariatur provident minima qui aliquam dicta itaque veritatis! Repellendus tempora iusto perspiciatis ipsum maiores, adipisci numquam atque reiciendis illum error.</p>
-      <p class="col-sm-12 order-4">01/02/2021(sat) ~ 16(sun)</p>
-      <p class="col-sm-12 order-5">@ la recta de Azua, Azua, Dominican Republic</p>
+      <div class="col-12">
+        <div class="row heading">
+          <h1 class="col-12 order-2">Super Sportcars Global Race 2021</h1>
+          <h2 class="col-12 order-1">"Hello sharing World"</h2>
+        </div>
+        <div class="col-12 header-info">
+          <p class="row">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita tempora pariatur provident minima.
+          </p>
+          <h3 class="col-12 event-date">01.02.2021(sat) ~ 16(sun)</h3>
+          <h4 class="col-12">@ la recta de Azua, Dominican Republic</h4>
+        </div>
+      </div>
     </header>
     <main class="row main">
       <section class="col main-program">
-        <div>
+        <div class="program-heading">
           <h2>Main Program</h2>
-          <div class="row">
-            <div class="col-sm-2"><i class="fas fa-tachometer-alt"></i></div>
-            <div class="col-sm-3"><p>Tuning</p></div>
-            <div class="col-sm-7"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+        </div>
+        <div class="col activities">
+          <div class="row activity">
+            <div class="col-1"><i class="fas fa-tachometer-alt"></i></div>
+            <div class="col-4 activity-name"><h5>Tuning</h5></div>
+            <div class="col-6 activity-description"><p>Lorem ipsum dolor sit amet.</p></div>
+          </div>
+          <div class="row activity">
+            <div class="col-1"><i class="fas fa-clock"></i></div>
+            <div class="col-4 activity-name"><h5>Endurance</h5></div>
+            <div class="col-6 activity-description"><p>Lorem ipsum dolor sit amet.</p></div>
+          </div>
+          <div class="row activity">
+            <div class="col-1"><i class="fas fa-mountain"></i></div>
+            <div class="col-4 activity-name"><h5>Of-Road</h5></div>
+            <div class="col-6 activity-description"><p>Lorem ipsum dolor sit amet.</p></div>
+          </div>
+          <div class="row activity">
+            <div class="col-1"><i class="fas fa-stopwatch"></i></div>
+            <div class="col-4 activity-name"><h5>Dragstrip</h5></div>
+            <div class="col-6 activity-description"><p>Lorem ipsum dolor sit amet.</p></div>
+          </div>
+          <div class="row activity">
+            <div class="col-1"><i class="fas fa-tachometer-alt"></i></div>
+            <div class="col-4 activity-name"><h5>Tuning</h5></div>
+            <div class="col-6 activity-description"><p>Lorem ipsum dolor sit amet.</p></div>
+          </div>
+          <div class="act-button">
+            <button>Get Your Entry</button>
           </div>
         </div>
       </section>
-      <section class="col-sm-12 pilots">
+      <section class="col-12 pilots">
         <div>
           <h2>Pilots</h2>
         </div>
       </section>
-      <section class="col-sm-12 partners">
-        <div>
-          <h2>Partners</h2>
-        </div>
-      </section>
     </main>
     <footer class="row justify-content-center">
-      <div class="col-4">
-
+      <div class="col-6">
+        <p>Super SportCar Global Race</p>
       </div>
-      <div class="col-5">
-
+      <div class="col-6">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
 
     </footer>

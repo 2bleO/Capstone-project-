@@ -1,14 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @font-face {
   font-family: 'cocogoose';
-  src: url(Assets/fonts/cocogoose-pro-cufonfonts/Cocogoose-Regular.ttf);
+  src: url(../fonts.Cocogoose.ttf);
 }
 
-.header-social {
-  height: 10px;
-  background-color: #ec5242;
+body {
+  min-width: 320px;
 }
 
-.navbar h1 {
+header {
+  background-image: url(../img/supercars.gif), -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#d3d3d3fb));
+  background-image: url(../img/supercars.gif), linear-gradient(#d3d3d3, #d3d3d3fb);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: right;
+  padding-bottom: 50px;
+  height: 100vh;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.social {
+  height: 20px;
+  background-color: #272a31;
+}
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.social li {
+  list-style: none;
+  font-size: 10px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.social li a {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.heading h1 {
   font-family: 'cocogoose', sans-serif;
+  color: #ec5242;
+  font-size: 36px;
+  font-weight: bold;
+  background: url(../img/redpattern.jpg) repeat center center;
+  background-size: cover;
+  background-clip: border-box;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.heading h2 {
+  color: #ec5242;
+}
+
+.header-info p {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #d3d3d3;
+  color: #272a31;
+}
+
+.header-info h4 {
+  font-size: 16px;
+}
+
+.event-date {
+  font-size: 22px;
+  font-weight: 700;
+  color: #272a31;
+}
+
+.main-program {
+  background-image: url(../img/blackpattern.jpg), -webkit-gradient(linear, left top, left bottom, from(#d3d3d336), to(#d3d3d336));
+  background-image: url(../img/blackpattern.jpg), linear-gradient(#d3d3d336, #d3d3d336);
+  background-blend-mode: overlay;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-program h2 {
+  color: #d3d3d3;
+}
+
+.program-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.program-heading h2 {
+  margin: 20px;
+  border-bottom: #ec5242 2px solid;
+  border-width: 1px;
+}
+
+.activity {
+  margin: 10px;
+  background-color: #d3d3d32a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.activity h5 {
+  font-size: 14px;
+  color: #ec5242;
+}
+
+.activity p {
+  margin: 0;
+}
+
+.activity i {
+  color: #d3d3d3;
+}
+
+.activity-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.act-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.act-button button {
+  background-color: #ec5242;
+  color: #d3d3d3;
+  padding: 10px 25px;
+  margin: 20px;
+  font-weight: 500;
+  border: none;
+}
+
+footer {
+  background-color: #272a31;
 }
 /*# sourceMappingURL=main.css.map */

@@ -45,3 +45,6 @@ Give a ⭐️ if you like this project!
 
 Original design idea by Cindy Shin in Behance (https://www.behance.net/adagio07).
 The Creative Commons license of the design: (https://creativecommons.org/licenses/by-nc/4.0/)
+
+<a href='https://www.freepik.es/fotos-vectores-gratis/fondo'>Vector de Fondo creado por davidzydd - www.freepik.es</a>
+<a href='https://www.freepik.es/fotos-vectores-gratis/fondo'>Vector de Fondo creado por kjpargeter - www.freepik.es</a>
