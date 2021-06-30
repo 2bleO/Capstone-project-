@@ -4,7 +4,7 @@
 
 > Web page to Showcase a Fictional Super SportCar Race as Microverse Capstone Project.
 
-![screenshot]()
+![screenshot](../Assets/img/screenshot.png)
 
 [Online Version]()
 
