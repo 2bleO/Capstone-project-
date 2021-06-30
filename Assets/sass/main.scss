@@ -6,7 +6,7 @@ $lato: 'Lato', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @font-face {
     font-family: 'cocogoose';
-    src: url(../fonts.Cocogoose.ttf);
+    src: url(../fonts/Cocogoose.ttf);
 }
 
 body {
@@ -18,8 +18,6 @@ header {
     background-blend-mode: overlay;
     background-size: cover;
     background-position: right;
-    padding-bottom: 50px;
-    height: 100vh;
     align-content: flex-start;
 }
 
@@ -44,17 +42,27 @@ header {
         }
     }
 }
+
+.navbar-brand{
+    display: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
 .heading {
     h1 {
         font-family: 'cocogoose', sans-serif;
         color: $primary;
-        font-size: 36px;
-        font-weight: bold;
-        background: url(../img/redpattern.jpg) repeat center center;
-        background-size: cover;
-        background-clip: border-box;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+        font-size: 32px;
+        //background: url(../img/redpattern.jpg) repeat center center;
+        //background-size: cover;
+        //background-clip: border-box;
+        //-webkit-text-fill-color: transparent;
+        //-webkit-background-clip: text;
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
     h2 {
         color: $primary; 
@@ -68,8 +76,12 @@ header {
         border: 2px solid $third;
         color: $dark;
     }
+    h3 {
+        padding: 10px;
+    }
     h4 {
         font-size: 16px;
+        margin-bottom: 50px;
     }
 }
 
@@ -83,8 +95,10 @@ header {
     background-image: url(../img/blackpattern.jpg), linear-gradient(#d3d3d336, #d3d3d336);
     background-blend-mode: overlay;
     background-size: cover;
-    height: 100vh;
     h2{
+        color: $third;
+    }
+    p {
         color: $third;
     }
 }
@@ -135,6 +149,92 @@ header {
     }
 }
 
-footer {
+.pilots {
+    button {
+        margin: 15px;
+        border: 1px solid $third;
+        i {
+            color: $primary;
+            font-size: 12px;
+        }
+    }
+}
+
+.pilot {
+    padding: 10px;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: center;
+}
+
+.pilots-heading {
+    display: flex;
+    justify-content: center;
+    h2 {
+        margin: 20px;
+        border-bottom: $primary 2px solid;
+        border-width: 1px;
+    }
+}
+
+.pilot-picture {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/pilot.jpg);
+    background-size: cover;
+}
+.pilot-info {
+    p {
+        font-size: 10px;
+    }
+    h5 {
+        font-family: 'cocogoose', sans-serif;
+        font-size: 14px;
+    }
+}
+
+.team-description {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/lamborghini.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.partners {
     background-color: $dark;
+    padding: 20px;
+}
+
+.partner-heading {
+    display: flex;
+    justify-content: center;
+    h2 {
+        color: $third;
+        margin: 20px;
+        border-bottom: $primary 2px solid;
+        border-width: 1px;
+    }
+}
+
+.partner-img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    padding: 15px;
+    p{
+        font-size: 12px;
+    }
+}
+
+.footer-name {
+    p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    i {
+        font-size: 12px;
+    }
 }
