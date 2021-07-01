@@ -177,14 +177,29 @@ header {
   border: none;
 }
 
-.pilots button {
+#pilots button {
   margin: 15px;
   border: 1px solid #d3d3d3;
 }
 
-.pilots button i {
+#pilots button i {
   color: #ec5242;
   font-size: 12px;
+}
+
+#pilots-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#pilots-heading h2 {
+  margin: 20px;
+  border-bottom: #ec5242 2px solid;
+  border-width: 1px;
 }
 
 .pilot {
@@ -198,30 +213,16 @@ header {
           justify-content: center;
 }
 
-.pilots-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.pilots-heading h2 {
-  margin: 20px;
-  border-bottom: #ec5242 2px solid;
-  border-width: 1px;
-}
-
 .pilot-picture {
+  margin: 0;
+  padding: 0;
   width: 50px;
-  height: 50px;
-  background-image: url(../img/pilot.jpg);
-  background-size: cover;
+  height: auto;
 }
 
 .pilot-info p {
   font-size: 10px;
+  font-family: "Lato", sans-serif;
 }
 
 .pilot-info h5 {
@@ -229,12 +230,11 @@ header {
   font-size: 14px;
 }
 
-.team-description {
+.team {
+  margin: 0;
+  padding: 0;
   width: 50px;
-  height: 50px;
-  background-image: url(../img/lamborghini.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: auto;
 }
 
 .partners {
