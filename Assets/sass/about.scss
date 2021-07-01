@@ -35,9 +35,7 @@ footer {
 }
 
 header {
-  background-image:
-    url(../img/supercars.gif),
-    linear-gradient(#d3d3d3, #d3d3d3fb);
+  background-color: #d3d3d3;
   background-blend-mode: overlay;
   background-size: cover;
   background-position: right;
@@ -79,6 +77,8 @@ header {
 }
 
 .heading {
+  text-align: center;
+
   h1 {
     font-family: "cocogoose", sans-serif;
     color: $primary;
@@ -96,9 +96,11 @@ header {
 .header-info {
   p {
     margin: 5px;
-    padding: 5px;
+    padding: 7px;
     border: 2px solid $third;
     color: $dark;
+    text-align: center;
+    background-color: white;
   }
 
   h3 {
@@ -108,10 +110,16 @@ header {
   }
 
   h4 {
-    font-size: 16px;
+    font-size: 11px;
     margin-bottom: 50px;
     color: $dark;
+    text-align: center;
+    margin-top: 20px;
   }
+}
+
+.header-info-container {
+  justify-content: space-around;
 }
 
 .event-date {
@@ -121,11 +129,7 @@ header {
 }
 
 .main-program {
-  background-image:
-    url(../img/blackpattern.jpg),
-    linear-gradient(#d3d3d336, #d3d3d336);
-  background-blend-mode: overlay;
-  background-size: cover;
+  background-color: white;
 
   h2 {
     color: $third;
@@ -142,7 +146,52 @@ header {
   align-items: center;
 
   h2 {
+    font-size: 15px;
     margin: 20px 20px 10px 20px;
+    color: $dark;
+    text-align: center;
+  }
+
+  span {
+    width: 50px;
+    height: 2px;
+    background-color: $primary;
+  }
+
+  p {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.race-logo {
+  border: 1px solid $third;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h2 {
+    color: $dark;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+.activities {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+
+  h2 {
+    color: $dark;
+    font-size: 16px;
+    padding: 10px;
   }
 
   span {
@@ -152,49 +201,33 @@ header {
   }
 }
 
-.activities {
-  justify-content: space-around;
-}
-
 .activity {
-  margin: 10px;
-  background-color: #d3d3d32a;
+  height: 120px;
+  padding: 15px;
+  margin: 3px;
+}
 
-  h5 {
-    font-size: 14px;
-    color: $primary;
-  }
+.activity1 {
+  background-image: url(/Assets/img/mercedess-supercar.jpg);
+  background-blend-mode: overlay;
+  background-color: $primary;
+  background-size: cover;
+  padding: 10px;
 
-  p {
-    margin: 0;
-  }
-
-  i {
-    color: $third;
+  h3 {
+    color: #fff;
   }
 }
 
-.activity-data {
-  align-items: center;
-  justify-content: space-evenly;
-}
+.activity2 {
+  background-image: url(/Assets/img/supercar2.jpg);
+  background-blend-mode: overlay;
+  background-color: $primary;
+  background-size: cover;
+  padding: 10px;
 
-.activity-name {
-  display: flex;
-  justify-content: center;
-}
-
-.act-button {
-  display: flex;
-  justify-content: center;
-
-  button {
-    background-color: $primary;
-    color: $third;
-    padding: 10px 25px;
-    margin: 20px;
-    font-weight: 500;
-    border: none;
+  h3 {
+    color: #fff;
   }
 }
 
@@ -311,28 +344,6 @@ header {
 
   .navbar {
     background-color: white;
-  }
-
-  .activity-data {
-    justify-content: space-around;
-
-    i {
-      font-size: 20px;
-      margin: 10px;
-    }
-  }
-
-  .activity {
-    margin: 3px;
-  }
-
-  .activity-description {
-    p {
-      text-align: center;
-      font-size: 10px;
-      line-height: 15px;
-      margin: 10px;
-    }
   }
 
   .program-heading {

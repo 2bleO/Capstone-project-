@@ -16,6 +16,7 @@ const pilotsProp = {
     Aston: 'Assets/img/astonmartin.png',
     Mercedes: 'Assets/img/mercedes.png',
   },
+  moreButton: document.getElementById('pilots-button'),
 };
 
 const pilots = [
@@ -105,6 +106,10 @@ const pilotsMets = {
     pilotsProp.teamImage = document.getElementById(`${pilot.id}-team`);
     pilotsProp.teamImage.classList.add('col-1', 'team');
     pilotsProp.teamImage.setAttribute('src', pilot.team);
+    // Create Button Functionality //
+    pilotsProp.moreButton.addEventListener('click', pilotsMets.more);
+  },
+  more() {
   },
 };
 pilotsMets.run();
