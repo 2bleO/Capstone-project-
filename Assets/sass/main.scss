@@ -2,6 +2,7 @@ $primary: #ec5242;
 $dark: #272a31;
 $third: #d3d3d3;
 $lato: 'Lato', sans-serif;
+$coco: 'cocogoose', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @font-face {
@@ -24,6 +25,7 @@ header {
 .social {
     height: 20px;
     background-color: $dark;
+    display: none;
     ul {
         display: flex;
         justify-content: flex-end;
@@ -60,7 +62,8 @@ header {
         margin-bottom: 15px;
     }
     h2 {
-        color: $primary; 
+        color: $primary;
+        font-family: $lato; 
     }
 }
 
@@ -73,15 +76,18 @@ header {
     }
     h3 {
         padding: 10px;
+        color: $dark;
+        font-family: $coco;
     }
     h4 {
         font-size: 16px;
         margin-bottom: 50px;
+        color: $dark;
     }
 }
 
 .event-date {
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 700;
     color: $dark;
 }
@@ -100,20 +106,25 @@ header {
 
 .program-heading {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     h2 {
-        margin: 20px;
-        border-bottom: $primary 2px solid;
-        border-width: 1px;
+        margin: 20px 20px 10px 20px;
     }
+    span {
+        width: 50px;
+        height: 2px;
+        background-color: $primary;
+    }
+}
+
+.activities {
+    justify-content: space-around;
 }
 
 .activity {
     margin: 10px;
     background-color: #d3d3d32a;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
     h5 {
         font-size: 14px;
         color: $primary;
@@ -124,6 +135,11 @@ header {
     i {
         color: $third;
     }
+}
+
+.activity-data {
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .activity-name {
@@ -165,10 +181,15 @@ header {
 .pilots-heading {
     display: flex;
     justify-content: center;
-    h2 {
-        margin: 20px;
-        border-bottom: $primary 2px solid;
-        border-width: 1px;
+    flex-direction: column;
+    align-items: center;
+        h2 {
+            margin: 20px 20px 10px 20px;
+    }
+    span{
+        width: 50px;
+        height: 2px;
+        background-color: $primary;
     }
 }
 
@@ -204,11 +225,16 @@ header {
 .partner-heading {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     h2 {
+        margin: 20px 20px 10px 20px;
         color: $third;
-        margin: 20px;
-        border-bottom: $primary 2px solid;
-        border-width: 1px;
+    }
+    span{
+        width: 50px;
+        height: 2px;
+        background-color: $primary;
     }
 }
 
@@ -231,5 +257,55 @@ footer {
     }
     i {
         font-size: 12px;
+    }
+}
+/* Media Queries */
+@media (min-width: 768px) {
+    .social {
+        display: block;
+    }
+    .heading {
+        h1 {
+            font-size: 52px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: $primary;
+            padding: 15px; 
+        }
+    }
+    .header-info {
+        h3{
+            font-size: 20px;
+            font-family: $coco;
+        }
+    }
+    .navbar {
+        background-color: white;
+    }
+    .activity-data {
+        justify-content: space-around;
+        i {
+            font-size: 20px;
+            margin: 10px;
+        }
+    }
+    .activity{
+        margin: 3px;
+    }
+    .activity-description {
+        p {
+            text-align: center;
+            font-size: 10px;
+            line-height: 15px;
+            margin: 10px;
+        }
+    }
+    .program-heading {
+        margin: 20px;
+    }
+    .partners-logos {
+        justify-content: space-around;
     }
 }
