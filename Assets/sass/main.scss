@@ -1,0 +1,384 @@
+$primary: #ec5242;
+$dark: #272a31;
+$third: #d3d3d3;
+$lato: "Lato", sans-serif;
+$coco: "cocogoose", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@font-face {
+  font-family: "cocogoose";
+  src: url(../fonts/Cocogoose.ttf);
+}
+
+body {
+  min-width: 320px;
+}
+
+footer {
+  padding: 15px;
+
+  p {
+    font-size: 12px;
+  }
+}
+
+.footer-name {
+  p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  i {
+    font-size: 12px;
+  }
+}
+
+header {
+  background-image:
+    url(../img/supercars.gif),
+    linear-gradient(#d3d3d3, #d3d3d3fb);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: right;
+  align-content: flex-start;
+}
+
+.navlink:active {
+  color: $primary;
+}
+
+.social {
+  height: 20px;
+  background-color: $dark;
+  display: none;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  li {
+    list-style: none;
+    font-size: 10px;
+    padding: 3px;
+    text-decoration: none;
+
+    a {
+      color: #d3d3d3;
+      text-decoration: none;
+    }
+  }
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.heading {
+  h1 {
+    font-family: "cocogoose", sans-serif;
+    color: $primary;
+    font-size: 32px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    color: $primary;
+    font-family: $lato;
+  }
+}
+
+.header-info {
+  p {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid $third;
+    color: $dark;
+  }
+
+  h3 {
+    padding: 10px;
+    color: $dark;
+    font-family: $coco;
+  }
+
+  h4 {
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: $dark;
+  }
+}
+
+.event-date {
+  font-size: 17px;
+  font-weight: 700;
+  color: $dark;
+}
+
+.main-program {
+  background-image:
+    url(../img/blackpattern.jpg),
+    linear-gradient(#d3d3d336, #d3d3d336);
+  background-blend-mode: overlay;
+  background-size: cover;
+
+  h2 {
+    color: $third;
+  }
+
+  p {
+    color: $third;
+  }
+}
+
+.program-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin: 20px 20px 10px 20px;
+  }
+
+  span {
+    width: 50px;
+    height: 2px;
+    background-color: $primary;
+  }
+}
+
+.activities {
+  justify-content: space-around;
+}
+
+.activity {
+  margin: 10px;
+  background-color: #d3d3d32a;
+
+  h5 {
+    font-size: 14px;
+    color: $primary;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  i {
+    color: $third;
+  }
+}
+
+.activity-data {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.activity-name {
+  display: flex;
+  justify-content: center;
+}
+
+.act-button {
+  display: flex;
+  justify-content: center;
+
+  button {
+    background-color: $primary;
+    color: $third;
+    padding: 10px 25px;
+    margin: 20px;
+    font-weight: 500;
+    border: none;
+  }
+}
+
+.pilots {
+  button {
+    margin: 15px;
+    border: 1px solid $third;
+
+    i {
+      color: $primary;
+      font-size: 12px;
+    }
+  }
+}
+
+.pilot {
+  padding: 10px;
+  align-items: flex-start;
+  justify-items: center;
+  justify-content: center;
+}
+
+.pilots-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin: 20px 20px 10px 20px;
+  }
+
+  span {
+    width: 50px;
+    height: 2px;
+    background-color: $primary;
+  }
+}
+
+.pilot-picture {
+  width: 50px;
+  height: auto;
+}
+
+.pilot-info {
+  p {
+    font-size: 10px;
+  }
+
+  h5 {
+    font-family: "cocogoose", sans-serif;
+    font-size: 14px;
+  }
+}
+
+.team {
+  width: 50px;
+  height: auto;
+}
+
+.partners {
+  background-color: $dark;
+  padding: 20px;
+}
+
+.partner-heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin: 20px 20px 10px 20px;
+    color: $third;
+  }
+
+  span {
+    width: 50px;
+    height: 2px;
+    background-color: $primary;
+  }
+}
+
+.partner-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .social {
+    display: block;
+  }
+
+  .heading {
+    h1 {
+      font-size: 52px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: $primary;
+      padding: 15px;
+    }
+  }
+
+  .header-info {
+    h3 {
+      font-size: 20px;
+      font-family: $coco;
+    }
+  }
+
+  .navbar {
+    background-color: white;
+  }
+
+  .activity-data {
+    justify-content: space-around;
+
+    i {
+      font-size: 20px;
+      margin: 10px;
+    }
+  }
+
+  .activity {
+    margin: 3px;
+  }
+
+  .activity-description {
+    p {
+      text-align: center;
+      font-size: 10px;
+      line-height: 15px;
+      margin: 10px;
+    }
+  }
+
+  .program-heading {
+    margin: 20px;
+  }
+
+  .partners-logos {
+    justify-content: space-around;
+  }
+
+  .fa-car {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    h1 {
+      font-size: 70px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+  }
+
+  .header-info {
+    p {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    h4 {
+      font-size: 28px;
+      font-weight: 400;
+    }
+  }
+
+  .navbar-brand {
+    display: block;
+  }
+}
