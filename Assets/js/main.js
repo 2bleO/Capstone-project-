@@ -79,7 +79,7 @@ const pilotsMets = {
     // Create Pilot Div //
     pilotsProp.pilotsMain.appendChild(document.createElement('div')).setAttribute('id', pilot.id);
     pilotsProp.pilot = document.getElementById(pilot.id);
-    pilotsProp.pilot.classList.add('row', 'pilot');
+    pilotsProp.pilot.classList.add('col', 'd-flex', 'col-md-5', 'pilot');
     // Create Pilot Picture //
     pilotsProp.pilot.appendChild(document.createElement('img')).setAttribute('id', `${pilot.id}-picture`);
     pilotsProp.pilotPicture = document.getElementById(`${pilot.id}-picture`);
@@ -107,7 +107,7 @@ const pilotsMets = {
     pilotsProp.teamImage.classList.add('col-1', 'team');
     pilotsProp.teamImage.setAttribute('src', pilot.team);
     // Create Button Functionality //
-    pilotsProp.moreButton.addEventListener('click', pilotsMets.more);
+    // pilotsProp.moreButton.addEventListener('click', pilotsMets.more);
   },
   more() {
   },

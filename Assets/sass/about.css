@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
 @font-face {
   font-family: "cocogoose";
   src: url(../fonts/Cocogoose.ttf);
@@ -31,7 +32,7 @@ header {
   background-size: cover;
   background-position: right;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
 }
 
 .social {
@@ -42,20 +43,19 @@ header {
 
 .social ul {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .social li {
@@ -80,6 +80,8 @@ header {
 
 .heading {
   text-align: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .heading h1 {
@@ -120,7 +122,7 @@ header {
 
 .header-info-container {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .event-date {
@@ -143,15 +145,14 @@ header {
 
 .program-heading {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .program-heading h2 {
@@ -176,11 +177,13 @@ header {
 .race-logo {
   border: 1px solid #d3d3d3;
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .race-logo img {
@@ -196,31 +199,45 @@ header {
 
 .activities {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 30px;
 }
 
-.activities h2 {
+.activity-heading {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.activity-heading h2 {
   color: #272a31;
   font-size: 16px;
   padding: 10px;
 }
 
-.activities span {
+.activity-heading span {
   width: 50px;
   height: 2px;
   background-color: #ec5242;
 }
 
 .activity {
-  height: 120px;
+  display: -webkit-box;
+  display: flex;
   padding: 15px;
   margin: 3px;
+  justify-content: space-evenly;
 }
 
 .activity1 {
@@ -229,10 +246,15 @@ header {
   background-color: #ec5242;
   background-size: cover;
   padding: 10px;
+  margin: 5px;
 }
 
 .activity1 h3 {
   color: #fff;
+}
+
+.activity1 p {
+  font-size: 12px;
 }
 
 .activity2 {
@@ -241,76 +263,15 @@ header {
   background-color: #ec5242;
   background-size: cover;
   padding: 10px;
+  margin: 5px;
 }
 
 .activity2 h3 {
   color: #fff;
 }
 
-.pilots button {
-  margin: 15px;
-  border: 1px solid #d3d3d3;
-}
-
-.pilots button i {
-  color: #ec5242;
+.activity2 p {
   font-size: 12px;
-}
-
-.pilot {
-  padding: 10px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  justify-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.pilots-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pilots-heading h2 {
-  margin: 20px 20px 10px 20px;
-}
-
-.pilots-heading span {
-  width: 50px;
-  height: 2px;
-  background-color: #ec5242;
-}
-
-.pilot-picture {
-  width: 50px;
-  height: auto;
-}
-
-.pilot-info p {
-  font-size: 10px;
-}
-
-.pilot-info h5 {
-  font-family: "cocogoose", sans-serif;
-  font-size: 14px;
-}
-
-.team {
-  width: 50px;
-  height: auto;
 }
 
 .partners {
@@ -320,18 +281,17 @@ header {
 
 .partner-heading {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .partner-heading h2 {
@@ -355,28 +315,84 @@ header {
   .social {
     display: block;
   }
+
   .heading h1 {
     font-size: 52px;
     margin-top: 5px;
     margin-bottom: 15px;
   }
+
   .heading h2 {
     color: #ec5242;
     padding: 15px;
   }
+
   .header-info h3 {
     font-size: 20px;
     font-family: "cocogoose", sans-serif;
   }
+
+  .header-info-container p {
+    font-size: 20px;
+  }
+
+  .header-info-container h4 {
+    font-size: 16px;
+  }
+
   .navbar {
     background-color: white;
   }
+
   .program-heading {
     margin: 20px;
   }
+
   .partners-logos {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  .activity1 {
+    height: 140px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .activity1 p {
+    font-size: 15px;
+  }
+
+  .activity2 {
+    height: 140px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .activity2 p {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=about.css.map */

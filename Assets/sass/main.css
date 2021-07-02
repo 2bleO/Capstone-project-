@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
 @font-face {
   font-family: "cocogoose";
   src: url(../fonts/Cocogoose.ttf);
@@ -32,7 +33,11 @@ header {
   background-size: cover;
   background-position: right;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
+}
+
+.navlink:active {
+  color: #ec5242;
 }
 
 .social {
@@ -43,20 +48,19 @@ header {
 
 .social ul {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .social li {
@@ -134,15 +138,14 @@ header {
 
 .program-heading {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .program-heading h2 {
@@ -157,7 +160,7 @@ header {
 
 .activities {
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .activity {
@@ -180,29 +183,25 @@ header {
 
 .activity-data {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .activity-name {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .act-button {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .act-button button {
@@ -227,28 +226,27 @@ header {
 .pilot {
   padding: 10px;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   justify-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .pilots-heading {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .pilots-heading h2 {
@@ -287,18 +285,17 @@ header {
 
 .partner-heading {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .partner-heading h2 {
@@ -322,45 +319,78 @@ header {
   .social {
     display: block;
   }
+
   .heading h1 {
     font-size: 52px;
     margin-top: 5px;
     margin-bottom: 15px;
   }
+
   .heading h2 {
     color: #ec5242;
     padding: 15px;
   }
+
   .header-info h3 {
     font-size: 20px;
     font-family: "cocogoose", sans-serif;
   }
+
   .navbar {
     background-color: white;
   }
+
   .activity-data {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
+
   .activity-data i {
     font-size: 20px;
     margin: 10px;
   }
+
   .activity {
     margin: 3px;
   }
+
   .activity-description p {
     text-align: center;
     font-size: 10px;
     line-height: 15px;
     margin: 10px;
   }
+
   .program-heading {
     margin: 20px;
   }
+
   .partners-logos {
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading h1 {
+    font-size: 70px;
+  }
+
+  .heading h2 {
+    font-size: 36px;
+  }
+
+  .header-info p {
+    font-size: 24px;
+  }
+
+  .header-info h3 {
+    font-size: 28px;
+  }
+
+  .header-info h4 {
+    font-size: 28px;
+    font-weight: 400;
   }
 }
 /*# sourceMappingURL=main.css.map */
