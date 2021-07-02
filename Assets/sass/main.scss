@@ -346,6 +346,10 @@ header {
   .partners-logos {
     justify-content: space-around;
   }
+
+  .fa-car {
+    font-size: 26px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -372,5 +376,9 @@ header {
       font-size: 28px;
       font-weight: 400;
     }
+  }
+
+  .navbar-brand {
+    display: block;
   }
 }

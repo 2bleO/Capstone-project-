@@ -278,6 +278,10 @@ header {
   height: 100%;
 }
 
+.fa-car {
+  font-size: 26px;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
   .social {
@@ -350,5 +354,9 @@ header {
     p {
       font-size: 15px;
     }
+  }
+
+  .navbar-brand {
+    display: block;
   }
 }

@@ -369,6 +369,10 @@ header {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
+
+  .fa-car {
+    font-size: 26px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -391,6 +395,10 @@ header {
   .header-info h4 {
     font-size: 28px;
     font-weight: 400;
+  }
+
+  .navbar-brand {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
